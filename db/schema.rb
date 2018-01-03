@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20180103215038) do
 
   create_table "strips", force: :cascade do |t|
     t.string "title", null: false
-    t.string "stub", null: false
+    t.string "slug", null: false
     t.boolean "published", null: false
     t.datetime "published_at"
     t.datetime "created_at", null: false
