@@ -1,5 +1,7 @@
 class Strip < ApplicationRecord
 
+  has_many :cells
+
   before_save :set_slug_unless_already_there
   before_save :set_published_at_if_needed
 
